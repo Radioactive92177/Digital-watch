@@ -43,7 +43,7 @@ function clock()
         min="0"+min;
     }
     if (sec<10) {
-        sec="o"+sec;
+        sec="0"+sec;
     }
 
     /* month */
@@ -87,7 +87,7 @@ function clock()
     }
         
     document.getElementById("time").innerHTML = hr+":"+min+":"+sec; /* returns the HTML content (inner HTML) of an element*/
-    document.getElementById("date").innerHTML = day + ", " + date + "." + month + "." + year;
+    document.getElementById("date").innerHTML = day + ", " + date + " " + month + " " + year;
             
 }
 setInterval(clock, 1000); /* will call clock function after each second */
